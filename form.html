@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <title>ITV поддержка</title>
+</head>
+<body>
+    <header class="site-header">
+        <div class="header-container">
+            <div class="logo-block">
+                <img class="logo" src="img/logo/logo.png" alt="logo">
+            </div>
+            <div class="header-link">
+                <h1 class="header-title">Центр обучения и поддержки для партнеров ITV</h1>
+                <nav class="header-nav">
+                    <ul class="header-list">
+                        <li><a href="index.html">На начало</a></li>
+                        <li><a href="about.html">О нас</a></li>
+                        <li><a href="autorization.html">Регистрация</a></li>
+                        <li><a href="contacts.html">Контакты</a></li>
+                        <li><a href="practics.html">Практикантам</a></li>
+                        <li><a href="form.html" class="active">Форма обратной связи</a></li>
+                    </ul>
+                </nav>
+            </div>
+            <div class="reg-block">
+                <h2 class="header-title1">Поддержка: 8 927-333-98-23</h2>
+            </div>
+        </div>
+    </header>
+
+    <div id="modal" class="modal">
+        <div class="modal-content">
+            <span class="close-button">&times;</span>
+            <center><p>Пожалуйста, заполните все поля формы, чтобы мы могли с вами связаться.</p></center>
+        </div>
+    </div>
+    <main class="mainReg">
+        <section id="feedback">
+            <h2 class="section-title">Свяжитесь с нами</h2>
+            <button id="info-btn" onclick="Btn();">?</button>
+            <form id="contact-form" class="form">
+                <div>
+                    <input type="text" placeholder="Имя (Логин)" required>
+                    <input type="tel" placeholder="Телефон" required>
+                </div>
+                <input type="email" placeholder="Электронная почта" required>
+                <input type="text" placeholder="Компания" required>
+                <input type="text" placeholder="Должность" required>
+                <select required>
+                    <option value="" disabled selected>Выберите тему</option>
+                    <option value="support">Поддержка</option>
+                    <option value="sales">Продажи</option>
+                    <option value="feedback">Обратная связь</option>
+                </select>
+                <textarea placeholder="Сообщение" required></textarea>
+                <section style="margin: 0 0 20px 0;">
+                <label for="subscribe" style="color: #757575;"><div class="label-block"><span>Хочешь узнавать новое о ITV первым, ставь галочку!</span><input type="checkbox" id="subscribe" required></div></label>
+                </section>
+                <div class="reg-button-block">
+                    <button class="reg-button" type="submit">Отправить</button>
+                </div>
+            </form>
+            </section>
+    </main>
+
+    <footer>
+        <nav>
+            <ul>
+                <li><a href="index.html">Главная</a></li>
+                <li><a href="about.html">О нас</a></li>
+                <li><a href="autorization.html">Регистрация</a></li>
+                <li><a href="practics.html">Практикантам</a></li>
+                <li><a href="contacts.html">Контакты</a></li>
+                <li><a href="form.html" class="active">Форма обратной связи</a></li>
+            </ul>
+        </nav>
+        <p>&copy; 2024 ITV.</p>
+    </footer>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>
